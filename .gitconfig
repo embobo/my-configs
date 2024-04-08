@@ -1,0 +1,10 @@
+[alias]
+    # true aliases
+    st = status
+    c = commit
+    last = log -1 HEAD
+    unstage = reset HEAD --
+
+    # oops
+    stats = status
+    ass = add
