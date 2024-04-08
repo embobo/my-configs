@@ -5,7 +5,7 @@
     cm = commit -m
 
     # ----- more complex but commonly used commands ----- #
-		ammend = commit --ammend
+		amend = commit --amend
     # most recent commit (regardless of if pushed)
     last = log -1 HEAD
     # unstage files that are set to be committed
@@ -19,3 +19,4 @@
     ass = add
     cmmit = commit
     commt = commit
+		ammend = amend
