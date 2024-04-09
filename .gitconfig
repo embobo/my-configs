@@ -1,10 +1,22 @@
 [alias]
-    # true aliases
+    # ----- truly shorthand ----- #
     st = status
-    c = commit
-    last = log -1 HEAD
-    unstage = reset HEAD --
+    c = checkout
+    cm = commit -m
 
-    # oops
+    # ----- more complex but commonly used commands ----- #
+		amend = commit --amend
+    # most recent commit (regardless of if pushed)
+    last = log -1 HEAD
+    # unstage files that are set to be committed
+    unstage = reset HEAD --
+    # FILES with committed but not pushed changes
+    # unpushed commits is `git log origin/main..HEAD`
+    unpushed = diff --stat origin/main..HEAD
+
+    # ----- typos ----- #
     stats = status
     ass = add
+    cmmit = commit
+    commt = commit
+		ammend = amend
